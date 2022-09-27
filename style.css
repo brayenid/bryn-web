@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root {
+  --rubik: 'Rubik', sans-serif;
+  --mainColor: #eb1d358c;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--rubik);
+  font-size: calc(10px + 0.33vw);
+  color: #333;
+}
+main {
+  padding: 7em;
+}
+h1 {
+  font-weight: 500;
+  font-size: 3.4em;
+  margin-bottom: 1rem;
+}
+p {
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  max-width: 21em;
+}
+a {
+  text-decoration: none;
+  color: #111;
+  position: relative;
+  font-weight: 400;
+}
+a::after {
+  content: '';
+  width: 0;
+  height: 7px;
+  background-color: var(--mainColor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+a:hover::after {
+  width: 100%;
+}
