@@ -20,6 +20,24 @@ h1 {
   font-size: 4em;
   margin-bottom: 1rem;
 }
+h3 {
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+ol {
+  margin-left: 3em;
+}
+.front ol li,
+.back ol li {
+  margin-bottom: 1.5em;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+.front a,
+.back a {
+  font-weight: 300;
+}
 p {
   font-weight: 300;
   font-size: 1.6em;
@@ -36,10 +54,10 @@ a {
 a::after {
   content: '';
   width: 50%;
-  height: 5px;
+  height: 4px;
   background-color: var(--mainColor);
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   left: 0;
   z-index: -1;
   transition: all 0.2s ease-in-out;
