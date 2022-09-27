@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 :root {
   --rubik: 'Rubik', sans-serif;
-  --mainColor: #eb1d358c;
+  --mainColor: #eb1d3540;
+  --hoverColor: #eb1d358c;
 }
 * {
   margin: 0;
@@ -10,7 +11,7 @@
 body {
   font-family: var(--rubik);
   font-size: calc(10px + 0.33vw);
-  color: #333;
+  color: #111;
 }
 main {
   padding: 4.8em;
@@ -54,10 +55,10 @@ a {
 a::after {
   content: '';
   width: 50%;
-  height: 4px;
+  height: 3px;
   background-color: var(--mainColor);
   position: absolute;
-  bottom: -4px;
+  bottom: -3px;
   left: 0;
   z-index: -1;
   transition: all 0.2s ease-in-out;
@@ -68,4 +69,5 @@ a::after {
 }
 a:hover::after {
   width: 100%;
+  background-color: var(--hoverColor);
 }
