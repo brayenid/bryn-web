@@ -13,7 +13,7 @@ body {
   color: #333;
 }
 main {
-  padding: 5em;
+  padding: 4.8em;
 }
 h1 {
   font-weight: 500;
@@ -35,8 +35,8 @@ a {
 }
 a::after {
   content: '';
-  width: 0;
-  height: 7px;
+  width: 50%;
+  height: 5px;
   background-color: var(--mainColor);
   position: absolute;
   bottom: 0;
