@@ -31,7 +31,7 @@ ol {
 }
 .front ol li,
 .back ol li {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.1em;
   font-size: 1.6em;
   font-weight: 300;
 }
@@ -42,9 +42,9 @@ ol {
 p {
   font-weight: 300;
   font-size: 1.6em;
-  line-height: 2rem;
+  line-height: 2.2rem;
   margin-bottom: 1rem;
-  max-width: 21em;
+  max-width: 28em;
 }
 a {
   text-decoration: none;
