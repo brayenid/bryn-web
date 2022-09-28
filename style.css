@@ -14,12 +14,13 @@ body {
   color: #111;
 }
 main {
-  padding: 6.8em;
+  padding: 5vh 10vw;
 }
 h1 {
   font-weight: 500;
   font-size: 4em;
   margin-bottom: 1rem;
+  padding-top: 2.5rem;
 }
 h3 {
   font-weight: 500;
