@@ -1,0 +1,4 @@
+# Redirect default Netlify subdomain to primary domain
+
+https://brayenluhat.netlify.app/* https://brayenluhat.xyz/:splat 301!
+# Example: https://budi.netlify.app/* https://budidev.com/:splat 301!
