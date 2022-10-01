@@ -105,7 +105,7 @@ a:hover::after {
   font-size: calc(11px + 0.33vw);
 }
 #form textarea {
-  resize: vertical;
+  resize: none;
 }
 #form input:focus,
 #form textarea:focus {
