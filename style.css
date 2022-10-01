@@ -3,6 +3,7 @@
   --rubik: 'Rubik', sans-serif;
   --mainColor: #eb1d3540;
   --hoverColor: #eb1d358c;
+  --darkerHover: #ca192e8c;
 }
 * {
   margin: 0;
@@ -71,4 +72,68 @@ a::after {
 a:hover::after {
   width: 100%;
   background-color: var(--hoverColor);
+}
+#form {
+  max-width: 40rem;
+  max-height: 0;
+  width: auto;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  -webkit-transition: max-height 0.4s ease-in-out;
+  -moz-transition: max-height 0.4s ease-in-out;
+  -ms-transition: max-height 0.4s ease-in-out;
+  -o-transition: max-height 0.4s ease-in-out;
+}
+#form.formShow {
+  max-height: 370px;
+  padding-bottom: 1em;
+}
+#form input,
+#form textarea {
+  width: 100%;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  border-radius: 0.4em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+  font-family: var(--rubik);
+}
+#form textarea {
+  resize: vertical;
+}
+#form input:focus,
+#form textarea:focus {
+  outline: none;
+  border-color: var(--hoverColor);
+}
+#form button {
+  background-color: var(--hoverColor);
+  border: none;
+  padding: 1em 2em;
+  font-family: var(--rubik);
+  color: white;
+  cursor: pointer;
+  box-shadow: -2px 3px 0px rgba(162, 20, 20, 0.3);
+  border-radius: 0.4em;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+}
+#form button:active {
+  box-shadow: none;
+  transform: translate(-2px, 3px);
+  -webkit-transform: translate(-2px, 3px);
+  -moz-transform: translate(-2px, 3px);
+  -ms-transform: translate(-2px, 3px);
+  -o-transform: translate(-2px, 3px);
+  background-color: var(--darkerHover);
+}
+.btn {
+  text-align: right;
 }
