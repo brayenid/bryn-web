@@ -93,7 +93,7 @@ a:hover::after {
   width: 100%;
   background-color: #fcfcfc;
   border: solid 1px #ccc;
-  padding: 1em 2em;
+  padding: 1em 2em 1em 1.5em;
   box-sizing: border-box;
   margin-bottom: 0.5em;
   border-radius: 0.4em;
