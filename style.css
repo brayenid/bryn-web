@@ -85,7 +85,7 @@ a:hover::after {
   -o-transition: max-height 0.4s ease-in-out;
 }
 #form.formShow {
-  max-height: 370px;
+  max-height: 400px;
   padding-bottom: 1em;
 }
 #form input,
@@ -102,6 +102,7 @@ a:hover::after {
   -ms-border-radius: 0.4em;
   -o-border-radius: 0.4em;
   font-family: var(--rubik);
+  font-size: calc(11px + 0.33vw);
 }
 #form textarea {
   resize: vertical;
@@ -124,6 +125,7 @@ a:hover::after {
   -moz-border-radius: 0.4em;
   -ms-border-radius: 0.4em;
   -o-border-radius: 0.4em;
+  font-size: calc(11px + 0.33vw);
 }
 #form button:active {
   box-shadow: none;
