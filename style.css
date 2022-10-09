@@ -5,6 +5,9 @@
   --hoverColor: #eb1d358c;
   --darkerHover: #ca192e8c;
 }
+::selection {
+  background-color: #eb1d355b;
+}
 * {
   margin: 0;
   padding: 0;
