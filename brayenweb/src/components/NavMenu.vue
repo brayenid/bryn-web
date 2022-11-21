@@ -1,22 +1,24 @@
 <template>
-  <nav>
+  <nav data-aos="fade-down" data-aos-delay="100">
     <div class="left">
-      <img width="45" height="45" src="@/assets/bryn.webp" alt="bryn" />
+      <img width="50" height="50" src="@/assets/bryn.webp" alt="bryn" />
       <h1>Brayen Luhat</h1>
     </div>
     <div class="right">
       <ul class="menuList">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="hamburger">
-      <input type="checkbox" id="menuCheck" />
-      <span></span>
-      <span></span>
-      <span></span>
+      <label for="check" class="bar">
+        <input id="check" type="checkbox" />
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </label>
     </div>
   </nav>
 </template>
@@ -24,6 +26,20 @@
 a {
   color: white;
   display: block;
+  position: relative;
+}
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  bottom: 10px;
+  transition: 0.2s ease-in-out;
+}
+a:hover::before {
+  background-color: aqua;
+  bottom: 0;
 }
 nav {
   display: flex;
@@ -63,7 +79,7 @@ nav {
   box-sizing: border-box;
   padding: 1rem;
   z-index: 10;
-  transform: translateX(-100%);
+  transform: translateX(-120%);
   transition: 0.2s ease-in-out;
 }
 .showMenu {
@@ -84,30 +100,52 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.hamburger span {
-  width: 60%;
-  height: 2px;
-  background-color: white;
-  transition: 0.2s ease-in-out;
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
 }
-.hamburger input {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  opacity: 0;
-  z-index: 10;
+.bar {
+  position: relative;
   cursor: pointer;
+  width: 50px;
+  height: 40px;
 }
-.hamburger input:checked ~ span:nth-child(2) {
-  transform-origin: 0;
-  transform: rotate(45deg) translateX(-3px);
+.bar span {
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background: #f1faee;
+  border-radius: 100px;
+  display: inline-block;
+  transition: 0.3s ease;
+  left: 0;
 }
-.hamburger input:checked ~ span:nth-child(3) {
-  transform: scale(0);
+.bar span.top {
+  top: 3px;
 }
-.hamburger input:checked ~ span:nth-child(4) {
-  transform-origin: 0;
-  transform: rotate(-45deg) translateX(-3px);
+.bar span.middle {
+  top: 17px;
+}
+.bar span.bottom {
+  bottom: 3px;
+}
+input[type]:checked ~ span.top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 48px;
+  left: 5px;
+}
+input[type]:checked ~ span.bottom {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 48px;
+  bottom: -1px;
+  box-shadow: 0 0 10px #495057;
+}
+input[type]:checked ~ span.middle {
+  transform: translateX(-20px);
+  opacity: 0;
 }
 @media screen and (min-width: 700px) {
   .menuList {
@@ -132,7 +170,7 @@ nav {
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  const menuCheck = document.querySelector('#menuCheck')
+  const menuCheck = document.querySelector('#check')
   const menuList = document.querySelector('.menuList')
   menuCheck.addEventListener('click', () => {
     menuList.classList.toggle('showMenu')
