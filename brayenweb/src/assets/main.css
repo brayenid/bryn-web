@@ -1,0 +1,14 @@
+@import './base.css';
+:root {
+  --mainColor: #6d9886;
+  --backgroundColor: #393e46;
+  --secondaryColor: #f2e7d5;
+}
+body {
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
