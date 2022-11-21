@@ -3,27 +3,32 @@
     {
       "name": "Banking Web",
       "image": "/src/assets/bankingweb.webp",
-      "stack": "Front-End"
+      "stack": "Front-End",
+      "url": "https://bookshelf-bryn.netlify.app/"
     },
     {
       "name": "dDesign Web",
       "image": "/src/assets/ddesign.webp",
-      "stack": "Front-End"
+      "stack": "Front-End",
+      "url": "https://ddesignbryn.netlify.app/"
     },
     {
       "name": "Todays Meals Web",
       "image": "/src/assets/todaysmeal.webp",
-      "stack": "Front-End"
+      "stack": "Front-End",
+      "url": "https://todaysmeals-bryn.netlify.app/"
     },
     {
       "name": "Node JS Authentication API",
       "image": "/src/assets/authapi.webp",
-      "stack": "Back-End"
+      "stack": "Back-End",
+      "url": "https://github.com/brayenid/authentication-form-api-nodejs"
     },
     {
       "name": "Multer x Sharp",
       "image": "/src/assets/multerapi.webp",
-      "stack": "Back-End"
+      "stack": "Back-End",
+      "url": "https://github.com/brayenid/multer-and-sharp"
     }
   ]
 }

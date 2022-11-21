@@ -99,6 +99,7 @@ nav {
   gap: 0.4rem;
   justify-content: center;
   align-items: center;
+  transform: scale(0.9);
 }
 input[type='checkbox'] {
   -webkit-appearance: none;

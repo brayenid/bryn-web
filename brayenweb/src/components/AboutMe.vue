@@ -58,6 +58,11 @@ AOS.init()
 }
 .rightAbout img {
   max-width: 350px;
+  transition: 0.3s ease-in-out;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.rightAbout img:hover {
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
 .aboutLink {
   font-weight: 500;

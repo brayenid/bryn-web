@@ -1,11 +1,9 @@
 @import './base.css';
 :root {
   --mainColor: #6d9886;
+  --hoverColor: #648a7a;
   --backgroundColor: #393e46;
   --secondaryColor: #f2e7d5;
-}
-html {
-  scroll-behavior: smooth;
 }
 body {
   background-color: #fff;

@@ -7,6 +7,9 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import IconRight from './icons/IconsRight.vue'
 import IconLeft from './icons/IconLeft.vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
 SwiperCore.use([Navigation, Pagination])
 const { projects } = datas
 </script>
@@ -16,7 +19,7 @@ const { projects } = datas
       <h1>#projects</h1>
       <p>Here are a few projects that i made (Front-End and Back-End)</p>
     </div>
-    <div class="projectsBottom">
+    <div data-aos="zoom-in-up" class="projectsBottom">
       <swiper
         :direction="vertical"
         :slides-per-view="1"
@@ -39,7 +42,7 @@ const { projects } = datas
       >
         <swiper-slide v-for="data in projects" :key="data.id">
           <div class="swipeContainer">
-            <img :src="data.image" alt="" />
+            <a :href="data.url" target="_blank"><img :src="data.image" :alt="data.name" :title="data.name" /></a>
           </div>
         </swiper-slide>
         <div class="pagination"></div>
