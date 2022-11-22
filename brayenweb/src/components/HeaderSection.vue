@@ -57,15 +57,16 @@ header {
 }
 .socials {
   background-color: var(--mainColor);
-  width: 2rem;
+  width: 1.5rem;
   position: absolute;
   bottom: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1.5rem 0.5rem;
+  padding: 1.1rem 0.5rem;
   align-items: center;
   border-radius: 0.4rem 0.4rem 0 0;
+  left: 2rem;
 }
 .socials a {
   color: var(--backgroundColor);

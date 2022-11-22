@@ -1,3 +1,19 @@
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  const menuCheck = document.querySelector('#check')
+  const menuList = document.querySelector('.menuList')
+  menuCheck.addEventListener('click', () => {
+    menuList.classList.toggle('showMenu')
+  })
+  document.addEventListener('click', (e) => {
+    if (menuList.classList.contains('showMenu') && e.target.id !== 'check' && !e.target.className.includes('menuList')) {
+      menuCheck.click()
+    }
+  })
+})
+</script>
 <template>
   <nav data-aos="fade-down" data-aos-delay="100">
     <div class="left">
@@ -49,7 +65,7 @@ nav {
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   position: relative;
-  padding: 5px 2rem;
+  padding: 9px 2rem;
   text-transform: uppercase;
   z-index: 40;
   font-size: 0.9rem;
@@ -82,7 +98,7 @@ nav {
   flex-direction: column;
   gap: 2.2rem;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1rem 2rem;
   z-index: 10;
   transform: translateX(-120%);
   opacity: 0;
@@ -106,7 +122,7 @@ nav {
   gap: 0.4rem;
   justify-content: center;
   align-items: center;
-  transform: scale(0.7) translateY(-3px);
+  transform: scale(0.7) translateY(-1px);
 }
 input[type='checkbox'] {
   -webkit-appearance: none;
@@ -184,14 +200,3 @@ input[type]:checked ~ span.middle {
   }
 }
 </style>
-<script setup>
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  const menuCheck = document.querySelector('#check')
-  const menuList = document.querySelector('.menuList')
-  menuCheck.addEventListener('click', () => {
-    menuList.classList.toggle('showMenu')
-  })
-})
-</script>
