@@ -5,7 +5,7 @@ const year = ref(new Date().getFullYear())
 <template>
   <div class="credit">
     <p>
-      © <span>{{ year }}</span> Brayen Luhat - Made with <span class="love">❤</span>
+      © <span>{{ year }}</span> Brayen Luhat - Made in <span class="love">Sendawar</span>
     </p>
   </div>
 </template>

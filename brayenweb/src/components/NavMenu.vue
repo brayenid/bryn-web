@@ -156,6 +156,7 @@ input[type]:checked ~ span.middle {
     transform: translateX(0);
     padding: 0;
     background-color: var(--backgroundColor);
+    opacity: 1;
   }
   .menuList li a {
     padding: 0;

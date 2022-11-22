@@ -16,7 +16,7 @@ AOS.init()
       </div>
       <div data-aos="fade-down" data-aos-delay="200" class="rightAbout">
         <div class="image">
-          <img src="@/assets/bryn.webp" alt="" />
+          <img src="@/assets/bryn.webp" alt="bryn" />
         </div>
       </div>
     </div>
