@@ -11,7 +11,10 @@ AOS.init()
   <header>
     <NavMenu />
     <div data-aos="zoom-in-up" data-aos-delay="1000" class="jumbo">
-      <h1>a <span>fullstack</span> web developer</h1>
+      <h1>
+        a <span>fullstack</span><br />
+        web developer
+      </h1>
     </div>
     <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1200" class="socials">
       <a href="https://github.com/brayenid" target="_blank"><IconGithubVue /></a>
