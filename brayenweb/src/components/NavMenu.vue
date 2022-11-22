@@ -1,7 +1,7 @@
 <template>
   <nav data-aos="fade-down" data-aos-delay="100">
     <div class="left">
-      <img width="50" height="50" src="@/assets/bryn.webp" alt="bryn" />
+      <img src="@/assets/bryn.webp" alt="bryn" />
       <h1>Brayen Luhat</h1>
     </div>
     <div class="right">
@@ -49,11 +49,15 @@ nav {
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
   position: relative;
-  padding: 9px;
+  padding: 5px 2rem;
   text-transform: uppercase;
   z-index: 40;
   font-size: 0.9rem;
   font-weight: 600;
+  position: fixed;
+  background-color: var(--backgroundColor);
+  top: 0;
+  left: 0;
 }
 .left {
   display: flex;
@@ -65,11 +69,13 @@ nav {
 }
 .left img {
   border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 .menuList {
   position: absolute;
   left: 0;
-  top: 4.1rem;
+  top: 3.7rem;
   width: 100%;
   background-color: #333;
   display: flex;
@@ -100,7 +106,7 @@ nav {
   gap: 0.4rem;
   justify-content: center;
   align-items: center;
-  transform: scale(0.8) translateY(-3px);
+  transform: scale(0.7) translateY(-3px);
 }
 input[type='checkbox'] {
   -webkit-appearance: none;
@@ -150,12 +156,15 @@ input[type]:checked ~ span.middle {
   opacity: 0;
 }
 @media screen and (min-width: 700px) {
+  nav {
+    padding: 9px 2rem;
+  }
   .menuList {
     position: static;
     flex-direction: row;
     transform: translateX(0);
     padding: 0;
-    background-color: var(--backgroundColor);
+    background-color: transparent;
     opacity: 1;
   }
   .menuList li a {
@@ -167,6 +176,11 @@ input[type]:checked ~ span.middle {
   .left h1 {
     display: block;
     color: white;
+  }
+  .left img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
   }
 }
 </style>

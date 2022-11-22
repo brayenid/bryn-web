@@ -49,7 +49,7 @@ header {
   text-transform: uppercase;
   box-sizing: border-box;
   padding: 1rem;
-  transform: translateY(-1.8rem);
+  text-align: center;
 }
 .jumbo span {
   color: var(--mainColor);
@@ -72,11 +72,11 @@ header {
 }
 @media screen and (min-width: 400px) {
   .jumbo h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     width: 25.49rem;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .jumbo h1 {
     font-size: 4rem;
     width: 34rem;
