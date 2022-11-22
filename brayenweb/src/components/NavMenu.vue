@@ -8,7 +8,7 @@ onMounted(() => {
     menuList.classList.toggle('showMenu')
   })
   document.addEventListener('click', (e) => {
-    if (menuList.classList.contains('showMenu') && e.target.id !== 'check' && !e.target.className.includes('menuList')) {
+    if (!e.target.closest('.menuList') && !e.target.closest('.hamburger') && menuList.classList.contains('showMenu')) {
       menuCheck.click()
     }
   })
