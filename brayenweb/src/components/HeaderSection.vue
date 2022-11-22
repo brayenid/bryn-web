@@ -43,7 +43,7 @@ header {
 }
 .jumbo h1 {
   font-family: 'Roboto Mono', sans-serif;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   width: 20.8rem;
   color: #fff;
   text-transform: uppercase;
@@ -72,7 +72,7 @@ header {
 }
 @media screen and (min-width: 400px) {
   .jumbo h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 25.49rem;
   }
 }
