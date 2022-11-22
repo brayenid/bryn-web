@@ -2,31 +2,31 @@
   "projects": [
     {
       "name": "Banking Web",
-      "image": "/src/assets/bankingweb.webp",
+      "image": "/public/bankingweb.webp",
       "stack": "Front-End",
       "url": "https://bookshelf-bryn.netlify.app/"
     },
     {
       "name": "dDesign Web",
-      "image": "/src/assets/ddesign.webp",
+      "image": "/public/ddesign.webp",
       "stack": "Front-End",
       "url": "https://ddesignbryn.netlify.app/"
     },
     {
       "name": "Todays Meals Web",
-      "image": "/src/assets/todaysmeal.webp",
+      "image": "/public/todaysmeal.webp",
       "stack": "Front-End",
       "url": "https://todaysmeals-bryn.netlify.app/"
     },
     {
       "name": "Node JS Authentication API",
-      "image": "/src/assets/authapi.webp",
+      "image": "/public/authapi.webp",
       "stack": "Back-End",
       "url": "https://github.com/brayenid/authentication-form-api-nodejs"
     },
     {
       "name": "Multer x Sharp",
-      "image": "/src/assets/multerapi.webp",
+      "image": "/public/multerapi.webp",
       "stack": "Back-End",
       "url": "https://github.com/brayenid/multer-and-sharp"
     }
