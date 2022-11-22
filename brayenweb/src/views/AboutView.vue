@@ -29,7 +29,7 @@ import { RouterLink } from 'vue-router'
 .aboutMe {
   max-width: 700px;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   min-height: 100vh;
 }
@@ -76,6 +76,9 @@ import { RouterLink } from 'vue-router'
 }
 .aboutMe a {
   padding: 3rem;
+}
+a {
+  color: var(--backgroundColor);
 }
 a:active {
   color: var(--mainColor);

@@ -72,7 +72,7 @@ swiper {
 }
 .projects p {
   margin-top: 1rem;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 .projectsBottom {
   position: relative;

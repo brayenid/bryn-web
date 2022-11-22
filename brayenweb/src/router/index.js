@@ -20,7 +20,12 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       component: () => import('../views/ErrorView.vue')
     }
-  ]
+  ],
+  scrollBehavior() {
+    return {
+      top: 0
+    }
+  }
 })
 
 export default router

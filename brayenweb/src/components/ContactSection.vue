@@ -9,7 +9,7 @@ AOS.init()
       <h1>#contact</h1>
       <p>Want to work together or just talk about your project, feel free to send me a message!</p>
     </div>
-    <div data-aos="zoom-in-down" data-aos-delay="400" id="form">
+    <div data-aos="zoom-in-down" data-aos-delay="200" id="form">
       <form target="_blank" action="https://formsubmit.co/319bddddd3b99cba0d6b68a77af1ed21" method="POST">
         <div>
           <input type="text" name="name" placeholder="Full Name" required />
@@ -46,7 +46,7 @@ AOS.init()
 }
 .contactTitle p {
   margin-top: 1rem;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 #form {
   max-width: 35rem;
