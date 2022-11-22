@@ -1,6 +1,7 @@
 <script setup>
 import HeaderSectionVue from '../components/HeaderSection.vue'
 import AboutMe from '../components/AboutMe.vue'
+import SKillsSectionVue from '../components/SKillsSection.vue'
 import ProjectsSectionVue from '../components/ProjectsSection.vue'
 import ContactSectionVue from '../components/ContactSection.vue'
 import CreditSection from '../components/CreditSection.vue'
@@ -8,6 +9,7 @@ import CreditSection from '../components/CreditSection.vue'
 <template>
   <HeaderSectionVue />
   <AboutMe id="about" />
+  <SKillsSectionVue />
   <ProjectsSectionVue id="projects" />
   <ContactSectionVue id="contact" />
   <CreditSection />

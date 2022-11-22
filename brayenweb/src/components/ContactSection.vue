@@ -36,7 +36,7 @@ AOS.init()
 .contactTitle {
   text-align: center;
   line-height: 1.8rem;
-  padding: 3rem;
+  padding: 3rem 1rem;
 }
 .contactTitle h1 {
   text-transform: uppercase;

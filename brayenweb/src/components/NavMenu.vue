@@ -44,7 +44,6 @@ a:hover::before {
 nav {
   display: flex;
   width: 100%;
-  background-color: var(--backgroundColor);
   justify-content: space-between;
   align-items: center;
   font-family: 'Inter', sans-serif;
@@ -72,7 +71,7 @@ nav {
   left: 0;
   top: 4.1rem;
   width: 100%;
-  background-color: var(--backgroundColor);
+  background-color: #333;
   display: flex;
   flex-direction: column;
   gap: 2.2rem;
@@ -80,10 +79,12 @@ nav {
   padding: 1rem;
   z-index: 10;
   transform: translateX(-120%);
+  opacity: 0;
   transition: 0.2s ease-in-out;
 }
 .showMenu {
   transform: translateX(0);
+  opacity: 1;
 }
 .right ul li a {
   padding: 1rem 0;
@@ -99,7 +100,7 @@ nav {
   gap: 0.4rem;
   justify-content: center;
   align-items: center;
-  transform: scale(0.9);
+  transform: scale(0.8) translateY(-3px);
 }
 input[type='checkbox'] {
   -webkit-appearance: none;
@@ -154,6 +155,7 @@ input[type]:checked ~ span.middle {
     flex-direction: row;
     transform: translateX(0);
     padding: 0;
+    background-color: var(--backgroundColor);
   }
   .menuList li a {
     padding: 0;
