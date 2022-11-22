@@ -77,4 +77,7 @@ import { RouterLink } from 'vue-router'
 .aboutMe a {
   padding: 3rem;
 }
+a:active {
+  color: var(--mainColor);
+}
 </style>
