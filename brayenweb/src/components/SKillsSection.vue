@@ -21,16 +21,28 @@
   justify-content: center;
 }
 .skills h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bolder;
   color: #333;
 }
 .skills span {
   padding: 0.7rem 1.5rem;
   color: #333;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); */
   border-radius: 0.3rem;
   font-size: 0.9rem;
+  transition: 0.3s ease-in-out;
+  border: 2px solid;
+}
+.skills span::before {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  transition: 0.3s ease-in-out;
 }
 .skillsItem {
   display: flex;
@@ -38,33 +50,47 @@
   gap: 1rem;
 }
 .skills span:nth-child(1) {
+  border-color: #fbedac;
+  position: relative;
+}
+.skills span:nth-child(1)::before {
   background-color: #fbedac;
 }
-.skills span:nth-child(1):hover {
-  background-color: #f8eaab;
+.skills span:nth-child(1):hover::before {
+  width: 70%;
 }
 .skills span:nth-child(2) {
+  border-color: #a2d2ff;
+}
+.skills span:nth-child(2)::before {
   background-color: #a2d2ff;
 }
-.skills span:nth-child(2):hover {
-  background-color: #adcdf9;
+.skills span:nth-child(2):hover::before {
+  width: 80%;
 }
 .skills span:nth-child(3) {
+  border-color: #a8e2dd;
+}
+.skills span:nth-child(3)::before {
   background-color: #a8e2dd;
 }
-.skills span:nth-child(3):hover {
-  background-color: #b8e2dd;
+.skills span:nth-child(3):hover::before {
+  width: 50%;
 }
 .skills span:nth-child(4) {
+  border-color: #66c6a3;
+}
+.skills span:nth-child(4)::before {
   background-color: #66c6a3;
 }
-.skills span:nth-child(4):hover {
-  background-color: #61bb9a;
+.skills span:nth-child(4):hover::before {
+  width: 25%;
 }
 @media screen and (min-width: 780px) {
   .skills {
     flex-direction: row;
     align-items: center;
+    gap: 3rem;
   }
 }
 </style>

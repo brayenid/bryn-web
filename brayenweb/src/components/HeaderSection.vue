@@ -50,7 +50,7 @@ header {
 }
 .jumbo span {
   color: var(--mainColor);
-  text-shadow: rgba(86, 232, 169, 0.334) 1px 1px 4px;
+  /* text-shadow: rgba(86, 232, 169, 0.334) 1px 1px 4px; */
 }
 .socials {
   background-color: var(--mainColor);
