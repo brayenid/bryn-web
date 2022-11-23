@@ -13,9 +13,9 @@ import { RouterLink } from 'vue-router'
         I don't know if anyone will ever open this page, but hey. Once again, my name is Brayen Luhat you can call me Brayen. I live in a small district in East Kalimantan (Kalimantan), West Kutai, Indonesia. I am an independent Web
         Developer student and always will be. My main programming language is Javascript (JS). I usually work as a fullstack JS developer. <br /><br />
         As a web programming enthusiast, I learned a lot from great programming teachers. I learned from teachers like Shandika Galih, Eko Kurniawan Khannedy and also many other teachers. I am also learning programmatically on the
-        <a href="https://www.dicoding.com/users/brayenluhat" target="_blank">Dicoding</a> platform, and I am also currently undergoing an Advanced Class Front End Web Development program held by IDCamp via Dicoding since last May. I am also
-        a member of Kelasfulstack.id organized by Codepolitan. Along the way through these learning programs, I will also be developing some independent projects, and if you are interested in working with me, you can contact me and talk
-        about your plans. <br /><br />
+        <a href="https://www.dicoding.com/users/brayenluhat" target="_blank">Dicoding</a> platform, and currently undergoing an Advanced Class Front End Web Development program held by IDCamp via Dicoding since last May. I am also a member
+        of Kelasfulstack.id organized by Codepolitan. Along the way through these learning programs, I will also be developing some independent projects, and if you are interested in working with me, you can contact me and talk about your
+        plans. <br /><br />
         You can find me on <a href="https://github.com/brayenid" target="_blank">Github</a>, <a href="https://www.linkedin.com/in/brayenluhat/" target="_blank">Linkedin</a>,
         <a href="https://www.instagram.com/brayenluhat/" target="_blank">Instagram</a>
       </p>

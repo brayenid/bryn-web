@@ -7,7 +7,7 @@ AOS.init()
   <div class="contactContainer">
     <div data-aos="zoom-in-up" class="contactTitle">
       <h1>#contact</h1>
-      <p>Want to work together or just talk about your project, feel free to send me a message!</p>
+      <p>Want to talk about your project, feel free to send me a message!</p>
     </div>
     <div data-aos="zoom-in-down" data-aos-delay="200" id="form">
       <form target="_blank" action="https://formsubmit.co/319bddddd3b99cba0d6b68a77af1ed21" method="POST">

@@ -5,7 +5,13 @@ import IconLinkedinVue from './icons/IconLinkedin.vue'
 import IconInstagramVue from './icons/IconInstagram.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { onMounted } from 'vue'
 AOS.init()
+onMounted(() => {
+  const nav = document.querySelector('nav')
+  const headerTitle = document.querySelector('.jumbo h1')
+  headerTitle.style.transform = `translateY(${nav.offsetHeight / 2}px)`
+})
 </script>
 <template>
   <header>

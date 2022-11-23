@@ -12,20 +12,42 @@ onMounted(() => {
       menuCheck.click()
     }
   })
+  const eyeball = () => {
+    const eyes = document.querySelectorAll('.eyes')
+    eyes.forEach((eye) => {
+      const x = eye.getBoundingClientRect().left + eye.clientWidth / 2
+      const y = eye.getBoundingClientRect().top + eye.clientHeight / 2
+      const radian = Math.atan2(event.pageX - x, event.pageY - y)
+      const rotate = radian * (180 / Math.PI) * -1 + 270
+      eye.style.transform = 'rotate(' + rotate + 'deg)'
+    })
+  }
+  document.body.addEventListener('mousemove', eyeball)
 })
+const getElementPosition = (elementQuery) => {
+  const element = document.querySelector(elementQuery).offsetTop - 67
+  return element
+}
+const gotoElement = (elementQuery) => {
+  const elementPosition = getElementPosition(elementQuery)
+  window.scrollTo(0, elementPosition)
+}
 </script>
 <template>
   <nav data-aos="fade-down" data-aos-delay="100">
     <div class="left">
-      <img src="@/assets/bryn.webp" alt="bryn" />
+      <div class="container">
+        <div class="eyes"></div>
+        <div class="eyes"></div>
+      </div>
       <h1>Brayen Luhat</h1>
     </div>
     <div class="right">
       <ul class="menuList">
         <li><a href="/">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="aboutClick" @click.prevent="gotoElement('#about')" href="#about">About</a></li>
+        <li><a @click.prevent="gotoElement('#projects')" href="#projects">Projects</a></li>
+        <li><a @click.prevent="gotoElement('#contact')" href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="hamburger">
@@ -170,6 +192,33 @@ input[type]:checked ~ span.bottom {
 input[type]:checked ~ span.middle {
   transform: translateX(-20px);
   opacity: 0;
+}
+.container {
+  display: flex;
+  padding: 2px;
+  border-radius: 0.3rem;
+}
+
+.container .eyes {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-color: #fff;
+  margin: 0 1px;
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.container .eyes::before {
+  content: '';
+  top: 35%;
+  left: 40px;
+  transform: translate(-460%, 0);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #222;
+  position: absolute;
 }
 @media screen and (min-width: 700px) {
   nav {
