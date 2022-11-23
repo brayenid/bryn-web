@@ -42,7 +42,7 @@ AOS.init()
 }
 .leftAbout article {
   font-weight: 300;
-  line-height: 1.6rem;
+  line-height: 1.9rem;
   padding: 1.5rem 0;
   font-size: 1.2rem;
 }
