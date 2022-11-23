@@ -32,7 +32,6 @@ AOS.init()
   max-width: 48rem;
   margin: auto;
   gap: 1.5rem;
-  min-height: 100vh;
   align-items: center;
   box-sizing: border-box;
   padding: 2rem;
@@ -89,6 +88,7 @@ AOS.init()
   .about {
     flex-direction: row;
     gap: 3rem;
+    min-height: 100vh;
   }
   .rightAbout img {
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);

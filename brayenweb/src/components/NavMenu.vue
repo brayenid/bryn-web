@@ -271,7 +271,7 @@ input[type]:checked ~ span.middle {
   width: 9px;
   background-color: #333;
   border-radius: 50%;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 @media screen and (min-width: 700px) {
   nav {
