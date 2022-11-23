@@ -21,7 +21,6 @@ onMounted(() => {
     const anchorX = rect.left + rect.width / 2
     const anchorY = rect.top + rect.height / 2
     const angleDeg = angle(mouseX, mouseY, anchorX, anchorY)
-    console.log(angleDeg)
     eyes.forEach((eye) => {
       eye.style.transform = `rotate(${90 + angleDeg}deg)`
     })

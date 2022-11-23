@@ -9,10 +9,10 @@ AOS.init()
     <div class="about">
       <div data-aos="fade-up" class="leftAbout">
         <h1>#about</h1>
-        <p>
+        <article>
           My name is Brayen Luhat, You can call me Brayen. I live in a small district in East Kalimantan (Borneo), West Kutai, Indonesia. I'm an independent Web Developer learner and will always be. My main programming language is
           Javascript (JS). I usually work as a JS fullstack developer. <RouterLink class="aboutLink" to="/about">Know more</RouterLink>
-        </p>
+        </article>
       </div>
       <div data-aos="fade-down" data-aos-delay="200" class="rightAbout">
         <div class="image">
@@ -41,7 +41,7 @@ AOS.init()
   order: 2;
   max-width: 350px;
 }
-.leftAbout p {
+.leftAbout article {
   font-weight: 300;
   line-height: 1.6rem;
   padding: 1.5rem 0;
@@ -58,6 +58,7 @@ AOS.init()
 }
 .rightAbout img {
   max-width: 350px;
+  width: 100%;
   transition: 0.3s ease-in-out;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
