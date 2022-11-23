@@ -12,17 +12,27 @@ onMounted(() => {
       menuCheck.click()
     }
   })
-  const eyeball = () => {
-    const eyes = document.querySelectorAll('.eyes')
+  const eyes = document.querySelectorAll('.eye')
+  const anchor = document.querySelector('.eyeContainer')
+  document.addEventListener('mousemove', (e) => {
+    const mouseX = e.clientX
+    const mouseY = e.clientY
+    const rect = anchor.getBoundingClientRect()
+    const anchorX = rect.left + rect.width / 2
+    const anchorY = rect.top + rect.height / 2
+    const angleDeg = angle(mouseX, mouseY, anchorX, anchorY)
+    console.log(angleDeg)
     eyes.forEach((eye) => {
-      const x = eye.getBoundingClientRect().left + eye.clientWidth / 2
-      const y = eye.getBoundingClientRect().top + eye.clientHeight / 2
-      const radian = Math.atan2(event.pageX - x, event.pageY - y)
-      const rotate = radian * (180 / Math.PI) * -1 + 270
-      eye.style.transform = 'rotate(' + rotate + 'deg)'
+      eye.style.transform = `rotate(${90 + angleDeg}deg)`
     })
+  })
+  const angle = (cx, cy, ex, ey) => {
+    const dy = ey - cy
+    const dx = ex - cx
+    const rad = Math.atan2(dy, dx)
+    const deg = (rad * 180) / Math.PI
+    return deg
   }
-  document.body.addEventListener('mousemove', eyeball)
 })
 const getElementPosition = (elementQuery) => {
   const element = document.querySelector(elementQuery).offsetTop - 67
@@ -36,9 +46,13 @@ const gotoElement = (elementQuery) => {
 <template>
   <nav data-aos="fade-down" data-aos-delay="100">
     <div class="left">
-      <div class="container">
-        <div class="eyes"></div>
-        <div class="eyes"></div>
+      <div class="eyeContainer">
+        <div class="eyeClover">
+          <div class="eye"><div class="pupil"></div></div>
+        </div>
+        <div class="eyeClover">
+          <div class="eye"><div class="pupil"></div></div>
+        </div>
       </div>
       <h1>Brayen Luhat</h1>
     </div>
@@ -193,32 +207,72 @@ input[type]:checked ~ span.middle {
   transform: translateX(-20px);
   opacity: 0;
 }
-.container {
+.eyeContainer {
+  width: 60px;
+  height: 30px;
   display: flex;
-  padding: 2px;
-  border-radius: 0.3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
-
-.container .eyes {
+.eyeContainer:hover > .eyeClover::before,
+.eyeContainer:hover > .eyeClover::after {
+  transform: scale(10);
+}
+.eyeClover {
+  border-radius: 50%;
   position: relative;
+  overflow: hidden;
+}
+.eyeClover::before,
+.eyeClover::after {
+  content: '';
+  transition: 0.1s ease-in-out;
+  background-color: rgb(225, 188, 140);
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  animation: blink 5s infinite;
+}
+.eyeClover::before {
+  top: 0;
+}
+.eyeClover::after {
+  bottom: 0;
+}
+@keyframes blink {
+  0% {
+    height: 1%;
+  }
+  49% {
+    height: 1%;
+  }
+  50% {
+    height: 50%;
+  }
+  51% {
+    height: 1%;
+  }
+  100% {
+    height: 1%;
+  }
+}
+.eye {
   width: 25px;
   height: 25px;
-  display: block;
-  background-color: #fff;
-  margin: 0 1px;
+  background-color: white;
   border-radius: 50%;
-  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
-.container .eyes::before {
-  content: '';
-  top: 35%;
-  left: 40px;
-  transform: translate(-460%, 0);
-  width: 8px;
-  height: 8px;
+.pupil {
+  height: 9px;
+  width: 9px;
+  background-color: #333;
   border-radius: 50%;
-  background: #222;
-  position: absolute;
+  margin-top: 5px;
 }
 @media screen and (min-width: 700px) {
   nav {
