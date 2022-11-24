@@ -16,7 +16,7 @@ import { RouterLink } from 'vue-router'
         <a href="https://www.dicoding.com/users/brayenluhat" target="_blank">Dicoding</a> platform, and currently undergoing an Advanced Class Front End Web Development program held by IDCamp via Dicoding since last May. I am also a member
         of Kelasfulstack.id organized by Codepolitan. Along the way through these learning programs, I will also be developing some independent projects, and if you are interested in working with me, you can contact me and talk about your
         plans. <br /><br />
-        You can find me on <a href="https://github.com/brayenid" target="_blank">Github</a>, <a href="https://www.linkedin.com/in/brayenluhat/" target="_blank">Linkedin</a>,
+        You can find me on <a href="https://github.com/brayenid" target="_blank">Github</a>, <a href="https://www.linkedin.com/in/brayenluhat/" target="_blank">Linkedin</a>, and
         <a href="https://www.instagram.com/brayenluhat/" target="_blank">Instagram</a>
       </article>
     </div>
