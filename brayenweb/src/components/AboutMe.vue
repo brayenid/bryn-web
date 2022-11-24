@@ -77,12 +77,12 @@ AOS.init()
   bottom: -0.1rem;
   width: 20%;
   height: 2px;
-  background-color: rgb(105, 166, 166);
+  background-color: var(--accentColor);
   transition: 0.2s ease-in-out;
 }
 .aboutLink:hover::before {
   width: 100%;
-  background-color: aquamarine;
+  background-color: var(--accentColorLighter);
 }
 @media screen and (min-width: 780px) {
   .about {

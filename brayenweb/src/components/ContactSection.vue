@@ -82,7 +82,7 @@ AOS.init()
   padding: 1em 2em;
   color: white;
   cursor: pointer;
-  box-shadow: -2px 3px 0px rgba(20, 162, 115, 0.3);
+  box-shadow: -2px 3px 0px rgba(162, 20, 20, 0.3);
   border-radius: 0.4em;
   -webkit-border-radius: 0.4em;
   -moz-border-radius: 0.4em;

@@ -1,8 +1,10 @@
 @import './base.css';
 :root {
-  --mainColor: #6d9886;
-  --hoverColor: #648a7a;
-  --backgroundColor: #393e46;
+  --mainColor: #ed4444;
+  --hoverColor: #da4242;
+  --accentColor: #ff5b5b;
+  --accentColorLighter: #f88d8d;
+  --backgroundColor: #24272b;
   --secondaryColor: #f2e7d5;
 }
 body {
@@ -12,4 +14,5 @@ body {
 }
 a {
   text-decoration: none;
+  color: #333;
 }

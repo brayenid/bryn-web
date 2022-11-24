@@ -53,19 +53,20 @@ import { RouterLink } from 'vue-router'
   color: inherit;
   font-weight: 400;
   position: relative;
+  display: inline-block;
 }
 .aboutMe article a::before {
   content: '';
   position: absolute;
-  bottom: -0.1rem;
+  bottom: 0.2rem;
   width: 30%;
-  background-color: #6d988629;
+  background-color: var(--accentColorLighter);
   height: 3px;
   transition: 0.2s ease-in-out;
 }
 .aboutMe article a:hover:before {
   width: 100%;
-  background-color: var(--mainColor);
+  background-color: var(--accentColor);
 }
 .aboutMe a {
   padding: 1rem;

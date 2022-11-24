@@ -47,10 +47,14 @@ const gotoElement = (elementQuery) => {
     <div class="left">
       <div class="eyeContainer">
         <div class="eyeClover">
-          <div class="eye"><div class="pupil"></div></div>
+          <div class="eyeAware">
+            <div class="eye"><div class="pupil"></div></div>
+          </div>
         </div>
         <div class="eyeClover">
-          <div class="eye"><div class="pupil"></div></div>
+          <div class="eyeAware">
+            <div class="eye"><div class="pupil"></div></div>
+          </div>
         </div>
       </div>
       <h1>Brayen Luhat</h1>
@@ -89,7 +93,7 @@ a::before {
   transition: 0.2s ease-in-out;
 }
 a:hover::before {
-  background-color: aqua;
+  background-color: var(--accentColor);
   bottom: 0;
 }
 nav {
@@ -214,10 +218,6 @@ input[type]:checked ~ span.middle {
   align-items: center;
   gap: 4px;
 }
-.eyeContainer:hover > .eyeClover::before,
-.eyeContainer:hover > .eyeClover::after {
-  transform: scale(10);
-}
 .eyeClover {
   border-radius: 50%;
   position: relative;
@@ -227,11 +227,13 @@ input[type]:checked ~ span.middle {
 .eyeClover::after {
   content: '';
   transition: 0.1s ease-in-out;
-  background-color: rgb(225, 188, 140);
+  background-color: var(--mainColor);
   width: 100%;
+  height: 50%;
+  max-height: 0;
   position: absolute;
   z-index: 10;
-  animation: blink 5s infinite;
+  animation: blink 6s infinite;
 }
 .eyeClover::before {
   top: 0;
@@ -241,19 +243,19 @@ input[type]:checked ~ span.middle {
 }
 @keyframes blink {
   0% {
-    height: 1%;
+    max-height: 0;
   }
   49% {
-    height: 1%;
+    max-height: 0;
   }
   50% {
-    height: 50%;
+    max-height: 100px;
   }
   51% {
-    height: 1%;
+    max-height: 0;
   }
   100% {
-    height: 1%;
+    max-height: 0;
   }
 }
 .eye {
@@ -272,6 +274,30 @@ input[type]:checked ~ span.middle {
   background-color: #333;
   border-radius: 50%;
   margin-top: 7px;
+}
+.eyeAware {
+  position: relative;
+}
+.eyeAware::before,
+.eyeAware::after {
+  content: '';
+  position: absolute;
+  background-color: var(--mainColor);
+  height: 35%;
+  max-height: 0;
+  width: 100%;
+  z-index: 11;
+  transition: 0.1s ease-in-out;
+}
+.eyeAware::before {
+  top: 0;
+}
+.eyeAware::after {
+  bottom: 0;
+}
+.eyeContainer:hover .eyeAware::before,
+.eyeContainer:hover .eyeAware::after {
+  max-height: 10px;
 }
 @media screen and (min-width: 700px) {
   nav {
