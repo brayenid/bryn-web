@@ -34,7 +34,7 @@ onMounted(() => {
   }
 })
 const getElementPosition = (elementQuery) => {
-  const element = document.querySelector(elementQuery).offsetTop - 65
+  const element = document.querySelector(elementQuery).offsetTop - 64
   return element
 }
 const gotoElement = (elementQuery) => {
