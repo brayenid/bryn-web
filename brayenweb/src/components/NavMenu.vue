@@ -46,12 +46,12 @@ const gotoElement = (elementQuery) => {
   <nav data-aos="fade-down" data-aos-delay="100">
     <div class="left">
       <div class="eyeContainer">
-        <div class="eyeClover">
+        <div class="eyeLid">
           <div class="eyeAware">
             <div class="eye"><div class="pupil"></div></div>
           </div>
         </div>
-        <div class="eyeClover">
+        <div class="eyeLid">
           <div class="eyeAware">
             <div class="eye"><div class="pupil"></div></div>
           </div>
@@ -218,13 +218,13 @@ input[type]:checked ~ span.middle {
   align-items: center;
   gap: 4px;
 }
-.eyeClover {
+.eyeLid {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
-.eyeClover::before,
-.eyeClover::after {
+.eyeLid::before,
+.eyeLid::after {
   content: '';
   transition: 0.1s ease-in-out;
   background-color: var(--mainColor);
@@ -235,10 +235,10 @@ input[type]:checked ~ span.middle {
   z-index: 10;
   animation: blink 6s infinite;
 }
-.eyeClover::before {
+.eyeLid::before {
   top: 0;
 }
-.eyeClover::after {
+.eyeLid::after {
   bottom: 0;
 }
 @keyframes blink {
