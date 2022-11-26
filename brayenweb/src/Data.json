@@ -9,21 +9,21 @@
     },
     {
       "name": "dDesign Web",
-      "desc": "This project is built with Vanilla JS. This website is a gallery that displays my friend's works.",
+      "desc": "This project was built with Vanilla JS. This website is a gallery that displays my friend's works.",
       "image": "/projects/ddesign.webp",
       "stack": "Front-End",
       "url": "https://ddesignbryn.netlify.app/"
     },
     {
       "name": "Bookshelf",
-      "desc": "This project is built with Vanilla JS. This project is a submission project for the Beginner Level Web Front-End class in Dicoding. With this project I graduated to intermediate level.",
+      "desc": "This project was built with Vanilla JS. This project is a submission project for the Beginner Level Web Front-End class in Dicoding. With this project I graduated to intermediate level.",
       "image": "/projects/bookshelf.webp",
       "stack": "Front-End",
       "url": "https://bookshelf-bryn.netlify.app/"
     },
     {
       "name": "Todays Meals Web",
-      "desc": "This project is built with Web Components. This project is a submission project for the Intermediate Web Front-End class at Dicoding, and with this project I graduated to the advanced class.",
+      "desc": "This project was built using Web Components. This project is a submission project for the Intermediate Web Front-End class at Dicoding, and with this project I graduated to the expert level.",
       "image": "/projects/todaysmeal.webp",
       "stack": "Front-End",
       "url": "https://todaysmeals-bryn.netlify.app/"
