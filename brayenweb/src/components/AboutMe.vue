@@ -89,6 +89,7 @@ AOS.init()
     flex-direction: row;
     gap: 3rem;
     min-height: 100vh;
+    padding-bottom: 11rem;
   }
   .rightAbout img {
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
