@@ -35,7 +35,7 @@ const { projects } = datas
         :breakpoints="{
           '768': {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 30,
             direction: 'horizontal'
           }
         }"
