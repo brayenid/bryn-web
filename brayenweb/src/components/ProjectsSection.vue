@@ -23,7 +23,7 @@ const { projects } = datas
       <swiper
         :direction="vertical"
         :slides-per-view="1"
-        :space-between="50"
+        :space-between="30"
         :navigation="{
           nextEl: '.next',
           prevEl: '.prev'
@@ -42,7 +42,15 @@ const { projects } = datas
       >
         <swiper-slide v-for="data in projects" :key="data.id">
           <div class="swipeContainer">
-            <a :href="data.url" target="_blank"><img :src="data.image" :alt="data.name" :title="data.name" /></a>
+            <div class="swipeImg">
+              <a :href="data.url" target="_blank">
+                <img :src="data.image" :alt="data.name" :title="data.name" />
+              </a>
+            </div>
+            <div class="swipeDetail">
+              <h3>{{ data.name }}</h3>
+              <p>{{ data.desc }}</p>
+            </div>
           </div>
         </swiper-slide>
         <div class="pagination"></div>
@@ -56,8 +64,30 @@ const { projects } = datas
 .projects {
   width: 100%;
 }
-swiper {
-  background-color: aqua;
+.swipeContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
+.swipeDetail {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.841);
+  transition: 0.3s ease-in-out;
+  transform: translateY(100%);
+  width: 100%;
+}
+.swipeContainer:hover .swipeDetail {
+  transform: translateY(0);
+}
+.swipeDetail h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.swipeDetail p {
+  font-size: 0.8rem;
 }
 .projectsTop {
   text-align: center;
@@ -77,7 +107,7 @@ swiper {
 .projectsBottom {
   position: relative;
   box-sizing: border-box;
-  padding: 1rem 5rem 5rem;
+  padding: 1rem 4rem 5rem;
 }
 .pagination {
   font-size: 0.9rem;
@@ -92,9 +122,6 @@ button {
   bottom: 60%;
   z-index: 10;
 }
-img {
-  border-radius: 0.8rem;
-}
 .prev,
 .next {
   transform: scale(1.5);
@@ -104,5 +131,10 @@ img {
 }
 .next {
   right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .projectsBottom {
+    padding: 1rem 5rem 5rem;
+  }
 }
 </style>

@@ -11,7 +11,7 @@
 </template>
 <style scoped>
 .skills {
-  background-color: #fafafa;
+  background-color: #fff;
   min-height: 100px;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,7 @@
   box-sizing: border-box;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
 }
 .skills h2 {
   font-size: 1.3rem;
@@ -48,6 +49,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 .skills span:nth-child(1) {
   border-color: #fbedac;
@@ -86,11 +88,18 @@
 .skills span:nth-child(4):hover::before {
   width: 25%;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 800px) {
   .skills {
     flex-direction: row;
     align-items: center;
     gap: 3rem;
+    max-width: 800px;
+    margin: -70px auto 0;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 4px rgba(83, 83, 83, 0.1);
+  }
+  .skillsItem {
+    justify-content: start;
   }
 }
 </style>
