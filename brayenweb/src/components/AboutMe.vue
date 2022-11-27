@@ -11,7 +11,7 @@ AOS.init()
         <h1>#about</h1>
         <article>
           My name is Brayen Luhat, You can call me Brayen. I live in a small district in East Kalimantan (Borneo), West Kutai, Indonesia. I'm an independent Web Developer learner and will always be. My main programming language is
-          Javascript (JS). I usually work as a JS fullstack developer. <RouterLink class="aboutLink" to="/about">Know more</RouterLink>
+          Javascript (JS). I usually work with Javascript and some cool technologies that you can see below. <RouterLink class="aboutLink" to="/about">Know more</RouterLink>
         </article>
       </div>
       <div data-aos="fade-down" data-aos-delay="200" class="rightAbout">

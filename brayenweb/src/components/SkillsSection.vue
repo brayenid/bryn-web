@@ -1,105 +1,85 @@
 <template>
-  <div class="skills">
-    <h2>Skills :</h2>
-    <div class="skillsItem">
-      <span data-aos="zoom-in">#Javascript</span>
-      <span data-aos="zoom-in" data-aos-delay="300">#CSS</span>
-      <span data-aos="zoom-in" data-aos-delay="500">#Tailwind</span>
-      <span data-aos="zoom-in" data-aos-delay="700">#Vue</span>
+  <div class="capabilities">
+    <div class="skill">
+      <i class="devicon-javascript-plain"></i>
+      <div class="skillName">Javascript</div>
+    </div>
+    <div class="skill">
+      <i class="devicon-css3-plain"></i>
+      <div class="skillName">CSS</div>
+    </div>
+    <div class="skill">
+      <i class="devicon-tailwindcss-plain"></i>
+      <div class="skillName">Tailwind CSS</div>
+    </div>
+    <div class="skill">
+      <i class="devicon-vuejs-plain"></i>
+      <div class="skillName">Vue JS</div>
     </div>
   </div>
 </template>
 <style scoped>
-.skills {
-  background-color: #fff;
-  min-height: 100px;
+.capabilities {
+  min-height: 12rem;
+  width: 100%;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+.capabilities .skill {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 3rem 2rem;
-  box-sizing: border-box;
-  gap: 1rem;
   justify-content: center;
   align-items: center;
+  font-size: 2rem;
+  background-color: #fafafa;
+  color: #aaa;
+  transition: all 0.1s ease-in-out;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.01);
 }
-.skills h2 {
-  font-size: 1.3rem;
-  font-weight: bolder;
-  color: #333;
+
+.capabilities .skill i {
+  transform: translateY(0.8rem);
+  transition: all 0.3s ease-in-out;
 }
-.skills span {
-  padding: 0.7rem 1.5rem;
-  color: #333;
-  /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); */
-  border-radius: 0.3rem;
-  font-size: 0.9rem;
-  transition: 0.3s ease-in-out;
-  border: 2px solid;
+.capabilities .skill:hover i {
+  transform: scale(1.2);
 }
-.skills span::before {
-  content: '';
-  width: 0;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -10;
-  transition: 0.3s ease-in-out;
+.capabilities .skill:nth-child(1):hover {
+  background-color: #ffeea3;
+  color: #f49d1a;
 }
-.skillsItem {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+.capabilities .skill:nth-child(2):hover {
+  background-color: #96d5ff;
+  color: #1a75f4;
 }
-.skills span:nth-child(1) {
-  border-color: #fbedac;
-  position: relative;
+.capabilities .skill:nth-child(3):hover {
+  background-color: #9efff4;
+  color: #18b9d9;
 }
-.skills span:nth-child(1)::before {
-  background-color: #fbedac;
+.capabilities .skill:nth-child(4):hover {
+  background-color: #9affd7;
+  color: #1fab6a;
 }
-.skills span:nth-child(1):hover::before {
-  width: 70%;
+.skillName {
+  transform: scale(0);
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease-in-out;
 }
-.skills span:nth-child(2) {
-  border-color: #a2d2ff;
+.capabilities .skill:hover .skillName {
+  transform: scale(1);
 }
-.skills span:nth-child(2)::before {
-  background-color: #a2d2ff;
-}
-.skills span:nth-child(2):hover::before {
-  width: 80%;
-}
-.skills span:nth-child(3) {
-  border-color: #a8e2dd;
-}
-.skills span:nth-child(3)::before {
-  background-color: #a8e2dd;
-}
-.skills span:nth-child(3):hover::before {
-  width: 50%;
-}
-.skills span:nth-child(4) {
-  border-color: #66c6a3;
-}
-.skills span:nth-child(4)::before {
-  background-color: #66c6a3;
-}
-.skills span:nth-child(4):hover::before {
-  width: 25%;
-}
-@media screen and (min-width: 800px) {
-  .skills {
-    flex-direction: row;
-    align-items: center;
-    gap: 3rem;
-    max-width: 800px;
-    margin: -70px auto 0;
-    border-radius: 0.8rem;
-    box-shadow: 0px 1px 4px rgba(83, 83, 83, 0.1);
-  }
-  .skillsItem {
-    justify-content: start;
+@media screen and (min-width: 780px) {
+  .capabilities {
+    min-height: 6rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 </style>

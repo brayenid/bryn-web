@@ -68,6 +68,10 @@ const { projects } = datas
   position: relative;
   overflow: hidden;
   border-radius: 0.8rem;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.1);
+}
+.swipeImg img {
+  display: block;
 }
 .swipeDetail {
   position: absolute;

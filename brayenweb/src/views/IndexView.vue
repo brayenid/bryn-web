@@ -9,7 +9,7 @@ import CreditSection from '../components/CreditSection.vue'
 <template>
   <HeaderSectionVue />
   <AboutMe id="about" />
-  <SkillsSectionVue />
+  <SkillsSectionVue id="skills" />
   <ProjectsSectionVue id="projects" />
   <ContactSectionVue id="contact" />
   <CreditSection />
