@@ -1,5 +1,10 @@
+<script setup>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
+</script>
 <template>
-  <div class="capabilities">
+  <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="capabilities">
     <div class="skill">
       <i class="devicon-javascript-plain"></i>
       <div class="skillName">Javascript</div>
