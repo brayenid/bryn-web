@@ -47,7 +47,7 @@ AOS.init()
 .contactTitle p {
   max-width: 35rem;
   margin: 1rem auto 0;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   color: var(--headerColor);
 }
 #form {

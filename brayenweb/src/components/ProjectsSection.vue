@@ -105,7 +105,7 @@ const { projects } = datas
 }
 .projects p {
   margin-top: 1rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 .projectsBottom {
   position: relative;
