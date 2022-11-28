@@ -79,13 +79,13 @@ import { RouterLink } from 'vue-router'
   padding: 0.5rem;
 }
 .exit a:hover {
-  color: var(--mainColor);
+  color: var(--backgroundColorDarker);
 }
 a {
   color: var(--backgroundColor);
   transition: 0.2s ease-in-out;
 }
 a:active {
-  color: var(--mainColor);
+  color: var(--backgroundColorDarker);
 }
 </style>

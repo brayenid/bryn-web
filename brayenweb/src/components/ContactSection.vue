@@ -6,7 +6,7 @@ AOS.init()
 <template>
   <div class="contactContainer">
     <div class="contactTitle">
-      <h1>#contact</h1>
+      <h1>contact me</h1>
       <p>Want to talk about your project, feel free to send me a message!</p>
     </div>
     <div data-aos="zoom-in-up" data-aos-delay="100" id="form">
@@ -42,11 +42,12 @@ AOS.init()
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--mainColor);
+  color: var(--headerColor);
 }
 .contactTitle p {
   margin-top: 1rem;
   line-height: 1.3rem;
+  color: var(--headerColor);
 }
 #form {
   max-width: 35rem;
@@ -56,8 +57,8 @@ AOS.init()
 #form input,
 #form textarea {
   width: 100%;
-  background-color: #e5dccd;
-  border: solid 1px #ccc;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: solid 1px rgba(0, 0, 0, 0.1);
   padding: 1em 2em 1em 1.5em;
   box-sizing: border-box;
   margin-bottom: 0.5em;
@@ -68,6 +69,7 @@ AOS.init()
   -o-border-radius: 0.4em;
   font-size: calc(11px + 0.33vw);
   font-family: 'Inter', sans-serif;
+  color: white;
 }
 #form textarea {
   resize: none;
@@ -75,14 +77,19 @@ AOS.init()
 #form input:focus,
 #form textarea:focus {
   outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+#form input::placeholder,
+#form textarea::placeholder {
+  color: #666;
 }
 #form button {
-  background-color: var(--mainColor);
+  background-color: var(--backgroundColor);
   border: none;
   padding: 1em 2em;
   color: white;
   cursor: pointer;
-  box-shadow: -2px 3px 0px rgba(162, 20, 20, 0.3);
+  box-shadow: -2px 3px 0px var(--backgroundColorDarker);
   border-radius: 0.4em;
   -webkit-border-radius: 0.4em;
   -moz-border-radius: 0.4em;
@@ -97,7 +104,7 @@ AOS.init()
   -moz-transform: translate(-2px, 3px);
   -ms-transform: translate(-2px, 3px);
   -o-transform: translate(-2px, 3px);
-  background-color: var(--hoverColor);
+  background-color: var(--backgroundColorDarker);
 }
 .btn {
   text-align: right;

@@ -58,7 +58,7 @@ header {
   text-align: center;
 }
 .jumbo span {
-  color: var(--mainColor);
+  color: var(--accentColor);
   /* text-shadow: rgba(86, 232, 169, 0.334) 1px 1px 4px; */
 }
 .socials {

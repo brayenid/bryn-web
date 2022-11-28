@@ -5,7 +5,7 @@ const year = ref(new Date().getFullYear())
 <template>
   <div class="credit">
     <p>
-      © <span>{{ year }}</span> Brayen Luhat - Made in <span class="love">Sendawar</span>
+      © <span>{{ year }}</span> Brayen Luhat - Made in <span class="spec">Sendawar</span>
     </p>
   </div>
 </template>
@@ -18,7 +18,7 @@ const year = ref(new Date().getFullYear())
   min-height: 8rem;
   color: white;
 }
-.love {
-  color: var(--mainColor);
+.spec {
+  color: var(--accentColor);
 }
 </style>

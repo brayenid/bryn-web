@@ -16,7 +16,7 @@ const { projects } = datas
 <template>
   <div class="projects">
     <div class="projectsTop">
-      <h1>#projects</h1>
+      <h1>projects</h1>
       <p>Here are a few projects that i made (Front-End and Back-End)</p>
     </div>
     <div data-aos="zoom-in-up" class="projectsBottom">
@@ -101,7 +101,7 @@ const { projects } = datas
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--mainColor);
+  color: var(--headerColor);
 }
 .projects p {
   margin-top: 1rem;
