@@ -44,7 +44,7 @@ import { RouterLink } from 'vue-router'
   padding: 0.7rem 0;
 }
 .aboutMe article {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 300;
 }

@@ -7,7 +7,7 @@ AOS.init()
   <div class="contactContainer">
     <div class="contactTitle">
       <h1>contact me</h1>
-      <p>Want to talk about your project, feel free to send me a message!</p>
+      <p>Want to talk about your project or just want ask how to center a div? Feel free to send me a message!</p>
     </div>
     <div data-aos="zoom-in-up" data-aos-delay="100" id="form">
       <form target="_blank" action="https://formsubmit.co/319bddddd3b99cba0d6b68a77af1ed21" method="POST">
@@ -45,7 +45,8 @@ AOS.init()
   color: var(--headerColor);
 }
 .contactTitle p {
-  margin-top: 1rem;
+  max-width: 35rem;
+  margin: 1rem auto 0;
   line-height: 1.3rem;
   color: var(--headerColor);
 }
