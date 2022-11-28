@@ -21,7 +21,6 @@ const { projects } = datas
     </div>
     <div data-aos="zoom-in-up" class="projectsBottom">
       <swiper
-        :direction="vertical"
         :slides-per-view="1"
         :space-between="30"
         :navigation="{

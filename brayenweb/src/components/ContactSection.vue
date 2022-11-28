@@ -5,11 +5,11 @@ AOS.init()
 </script>
 <template>
   <div class="contactContainer">
-    <div data-aos="zoom-in-up" class="contactTitle">
+    <div class="contactTitle">
       <h1>#contact</h1>
       <p>Want to talk about your project, feel free to send me a message!</p>
     </div>
-    <div data-aos="zoom-in-down" data-aos-delay="200" id="form">
+    <div data-aos="zoom-in-down" data-aos-anchor-placement="center-center" id="form">
       <form target="_blank" action="https://formsubmit.co/319bddddd3b99cba0d6b68a77af1ed21" method="POST">
         <div>
           <input type="text" name="name" placeholder="Full Name" required />
