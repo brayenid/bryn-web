@@ -55,7 +55,7 @@ onMounted(() => {
 .eyeLid::after {
   content: '';
   transition: 0.1s ease-in-out;
-  background-color: var(--mainColor);
+  background-color: var(--accentColor);
   width: 100%;
   height: 50%;
   max-height: 0;
@@ -110,7 +110,7 @@ onMounted(() => {
 .eyeAware::after {
   content: '';
   position: absolute;
-  background-color: var(--mainColor);
+  background-color: var(--accentColor);
   height: 35%;
   max-height: 0;
   width: 100%;
