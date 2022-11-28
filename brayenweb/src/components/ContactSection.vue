@@ -69,7 +69,7 @@ AOS.init()
   -o-border-radius: 0.4em;
   font-size: calc(11px + 0.33vw);
   font-family: 'Inter', sans-serif;
-  color: white;
+  color: #333;
 }
 #form textarea {
   resize: none;
