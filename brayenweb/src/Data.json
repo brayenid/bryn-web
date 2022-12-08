@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "name": "Websdeck",
+      "desc": "This project was built using Vue JS. Websdeck is a CSS-JS Playground that inspired by CSSDeck.",
+      "image": "/projects/websdeck.webp",
+      "stack": "Front-End",
+      "url": "https://websdeck.netlify.app/"
+    },
+    {
       "name": "Banking Web",
       "desc": "This project was built using Vue JS, which is also my first project using Vue Js. I got the UI design for this project from uidesign.to.",
       "image": "/projects/bankingweb.webp",
