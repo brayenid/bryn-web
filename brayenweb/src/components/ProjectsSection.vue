@@ -71,6 +71,8 @@ const { projects } = datas
 }
 .swipeImg img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 .swipeDetail {
   position: absolute;
