@@ -1,0 +1,22 @@
+@import './base.css';
+:root {
+  --mainColor: #f5f5f5;
+  --secondaryColor: #ccdee0;
+  --accentColor: #3a8891;
+  --accentColorLighter: #48a2ac;
+  --backgroundColor: #24272b;
+  --backgroundColorDarker: #212121;
+  --headerColor: #222;
+}
+body {
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+::selection {
+  background-color: var(--accentColor);
+}
