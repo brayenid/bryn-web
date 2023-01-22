@@ -13,7 +13,9 @@ import CreditYear from '../components/CreditYear.vue'
       <a href="/resume.pdf" target="_blank" aria-label="Download Resume"><IconDownload /> Resume </a>
     </div>
     <div class="right">
-      <img src="@/assets/bryn.webp" alt="bryn" title="bryn" />
+      <div class="imgContainer">
+        <img src="@/assets/bryn.webp" alt="bryn" title="bryn" />
+      </div>
     </div>
   </div>
   <footer>
@@ -70,8 +72,14 @@ import CreditYear from '../components/CreditYear.vue'
   width: 100%;
   order: 1;
 }
+.imgContainer {
+  min-height: 250px;
+  width: 100%;
+  background-color: #eee;
+}
 .right img {
   width: max-content;
+  display: block;
 }
 footer {
   text-align: center;
