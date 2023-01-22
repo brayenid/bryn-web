@@ -105,6 +105,6 @@ main {
 footer {
   text-align: center;
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 </style>

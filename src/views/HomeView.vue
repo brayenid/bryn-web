@@ -58,7 +58,7 @@ p.desc {
 }
 .credit {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
 }
 @media screen and (min-width: 770px) {
   h1 {

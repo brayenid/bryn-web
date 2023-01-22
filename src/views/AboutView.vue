@@ -83,7 +83,7 @@ import CreditYear from '../components/CreditYear.vue'
 }
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 770px) {
