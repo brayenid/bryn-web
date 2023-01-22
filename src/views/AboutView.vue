@@ -9,7 +9,7 @@ import IconDownload from '../components/icons/IconDownload.vue'
         My name is Brayen Luhat, You can call me Brayen. I live in a small district in East Kalimantan (Borneo), West Kutai, Indonesia. I'm an independent Web Developer learner and will always be. My main programming language is Javascript
         (JS). I usually work with Javascript and some cool technologies like Vue JS, Tailwind CSS, ExpressJS, MongoDB, and curently learning Hapi JS and PostgreSQL.
       </p>
-      <a href="#"><IconDownload /> Resume </a>
+      <a href="/resume.pdf" target="_blank" aria-label="Download Resume"><IconDownload /> Resume </a>
     </div>
     <div class="right">
       <img src="@/assets/bryn.webp" alt="bryn" title="bryn" />
@@ -20,24 +20,26 @@ import IconDownload from '../components/icons/IconDownload.vue'
 .container {
   margin: 7rem auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 850px;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  flex-direction: column;
+  padding: 0 3rem;
 }
 .left {
-  width: 55%;
-  padding-top: 6rem;
+  width: 100%;
+  order: 2;
 }
 .left h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 300;
 }
 .left h1 span {
   font-weight: 500;
 }
 .left p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.8rem;
   margin: 2rem 0;
@@ -61,9 +63,35 @@ import IconDownload from '../components/icons/IconDownload.vue'
   color: inherit;
 }
 .right {
-  width: 45%;
+  width: 100%;
+  order: 1;
 }
 .right img {
   width: max-content;
+}
+
+@media screen and (min-width: 770px) {
+  .left h1 {
+    font-size: 3rem;
+  }
+  .left p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 710px) {
+  .container {
+    flex-direction: row;
+    padding: 0 2rem;
+  }
+  .left {
+    width: 50%;
+    padding-top: 6rem;
+    order: 1;
+  }
+  .right {
+    width: 50%;
+    order: 2;
+  }
 }
 </style>

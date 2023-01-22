@@ -1,52 +1,59 @@
 {
   "projects": [
     {
+      "id": "7",
       "name": "Websdeck",
       "desc": "This project was built using Vue JS. Websdeck is a CSS-JS Playground that inspired by CSSDeck.",
       "image": "/projects/websdeck.webp",
-      "stack": "Front-End",
+      "stack": ["VueJs", "Firebase", "Front-End"],
       "url": "https://websdeck.netlify.app/"
     },
     {
+      "id": "6",
       "name": "Banking Web",
       "desc": "This project was built using Vue JS, which is also my first project using Vue Js. I got the UI design for this project from uidesign.to.",
       "image": "/projects/bankingweb.webp",
-      "stack": "Front-End",
+      "stack": ["VueJs", "Front-End"],
       "url": "https://bankingweb-bryn.netlify.app/"
     },
     {
+      "id": "5",
       "name": "dDesign Web",
       "desc": "This project was built with Vanilla JS. This website is a gallery that displays my friend's works.",
       "image": "/projects/ddesign.webp",
-      "stack": "Front-End",
+      "stack": ["VanillaJS", "Front-End"],
       "url": "https://ddesignbryn.netlify.app/"
     },
     {
+      "id": "4",
       "name": "Bookshelf",
       "desc": "This project was built with Vanilla JS. This project is a submission project for the Beginner Level Web Front-End class at Dicoding. With this project I graduated to intermediate level.",
       "image": "/projects/bookshelf.webp",
-      "stack": "Front-End",
+      "stack": ["VanillaJS", "Front-End"],
       "url": "https://bookshelf-bryn.netlify.app/"
     },
     {
+      "id": "3",
       "name": "Todays Meals Web",
       "desc": "This project was built using Web Components. This project is a submission project for the Intermediate Level Web Front-End class at Dicoding, and with this project I graduated to the expert level.",
       "image": "/projects/todaysmeal.webp",
-      "stack": "Front-End",
+      "stack": ["VanillaJS", "Web-Components", "Front-End"],
       "url": "https://todaysmeals-bryn.netlify.app/"
     },
     {
+      "id": "2",
       "name": "Node JS Authentication API",
       "desc": "This project is a simple Back-End project to create an authentication on the web.",
       "image": "/projects/auth.webp",
-      "stack": "Back-End",
+      "stack": ["NodeJS", "MongoDB", "Back-End"],
       "url": "https://github.com/brayenid/authentication-form-api-nodejs"
     },
     {
+      "id": "1",
       "name": "Multer x Sharp",
       "desc": "This project was built with a combination of Multer and Sharp which aims to resize the original image input from the client side and store it on the server.",
       "image": "/projects/multerapi.webp",
-      "stack": "Back-End",
+      "stack": ["NodeJS", "Multer", "Sharp", "Back-End"],
       "url": "https://github.com/brayenid/multer-and-sharp"
     }
   ]

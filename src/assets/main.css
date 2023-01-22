@@ -3,6 +3,13 @@
   --mainColor: #fff;
   --secondaryColor: #222;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #111;
+}
 body {
   background-color: #fff;
   font-family: 'Lato', sans-serif;
@@ -16,4 +23,8 @@ a {
 ::selection {
   background-color: var(--secondaryColor);
   color: white;
+}
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--secondaryColor);
 }

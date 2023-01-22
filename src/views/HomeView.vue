@@ -2,6 +2,7 @@
 import IconGithub from '../components/icons/IconGithub.vue'
 import IconLinkedin from '../components/icons/IconLinkedin.vue'
 import IconSpotify from '../components/icons/IconSpotify.vue'
+const thisYear = new Date().getFullYear()
 </script>
 <template>
   <div class="container">
@@ -21,7 +22,7 @@ import IconSpotify from '../components/icons/IconSpotify.vue'
       </ul>
     </main>
     <div class="credit">
-      <p>© 2023</p>
+      <p>© {{ thisYear }}</p>
     </div>
   </div>
 </template>
@@ -35,11 +36,11 @@ import IconSpotify from '../components/icons/IconSpotify.vue'
   flex-direction: column;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 p.desc {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 300;
   margin-bottom: 2rem;
 }
@@ -60,5 +61,16 @@ p.desc {
   bottom: 2rem;
   color: #666;
   font-size: 0.8rem;
+}
+@media screen and (min-width: 770px) {
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  p.desc {
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
 }
 </style>
