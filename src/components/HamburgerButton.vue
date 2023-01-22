@@ -1,17 +1,23 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { useHamburgerButton } from '../store/hamburger'
 const props = defineProps({
   menuList: Object
 })
+const hamburgerButtonStoreEl = useHamburgerButton()
 const hamburger = ref()
+const hamburgerCheckbox = ref()
 const hamburgerClick = () => {
   props.menuList.classList.toggle('show')
   hamburger.value.classList.toggle('hamburgerFixed')
 }
+onMounted(() => {
+  hamburgerButtonStoreEl.$patch({ hamburgerEl: hamburgerCheckbox.value })
+})
 </script>
 <template>
   <div class="container" @click="hamburgerClick" ref="hamburger">
-    <input type="checkbox" />
+    <input type="checkbox" ref="hamburgerCheckbox" />
     <span></span>
     <span></span>
     <span></span>

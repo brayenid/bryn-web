@@ -2,7 +2,7 @@
 import IconGithub from '../components/icons/IconGithub.vue'
 import IconLinkedin from '../components/icons/IconLinkedin.vue'
 import IconSpotify from '../components/icons/IconSpotify.vue'
-const thisYear = new Date().getFullYear()
+import CreditYear from '../components/CreditYear.vue'
 </script>
 <template>
   <div class="container">
@@ -22,7 +22,7 @@ const thisYear = new Date().getFullYear()
       </ul>
     </main>
     <div class="credit">
-      <p>© {{ thisYear }}</p>
+      <CreditYear />
     </div>
   </div>
 </template>
@@ -59,8 +59,6 @@ p.desc {
 .credit {
   position: absolute;
   bottom: 2rem;
-  color: #666;
-  font-size: 0.8rem;
 }
 @media screen and (min-width: 770px) {
   h1 {

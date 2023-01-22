@@ -1,5 +1,6 @@
 <script setup>
 import datas from '../Data.json'
+import CreditYear from '../components/CreditYear.vue'
 const { projects } = datas
 </script>
 <template>
@@ -26,11 +27,14 @@ const { projects } = datas
         </div>
       </div>
     </main>
+    <footer>
+      <CreditYear />
+    </footer>
   </div>
 </template>
 <style scoped>
 .container {
-  margin: 7rem auto;
+  margin: 7rem auto 1rem;
   width: 100%;
   max-width: 850px;
 }
@@ -95,5 +99,10 @@ main {
   font-weight: 300;
   display: inline;
   font-size: 0.8rem;
+}
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 </style>

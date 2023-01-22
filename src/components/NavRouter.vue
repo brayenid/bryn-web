@@ -2,12 +2,17 @@
 import { RouterLink } from 'vue-router'
 import HamburgerButton from './HamburgerButton.vue'
 import { ref } from 'vue'
-const menuList = ref(null)
+import { useHamburgerButton } from '../store/hamburger'
+const menuList = ref()
+const hamburgerButton = ref()
+const closeMenu = () => {
+  useHamburgerButton().hamburgerEl.click()
+}
 </script>
 
 <template>
   <nav>
-    <ul ref="menuList">
+    <ul ref="menuList" @click="closeMenu">
       <li>
         <RouterLink to="/">Home</RouterLink>
       </li>
@@ -24,7 +29,7 @@ const menuList = ref(null)
         <RouterLink to="/contact">Contact</RouterLink>
       </li>
     </ul>
-    <HamburgerButton class="hamburger" :menu-list="menuList" />
+    <HamburgerButton class="hamburger" :menu-list="menuList" ref="hamburgerButton" />
   </nav>
 </template>
 

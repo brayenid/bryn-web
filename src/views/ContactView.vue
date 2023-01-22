@@ -1,3 +1,6 @@
+<script setup>
+import CreditYear from '../components/CreditYear.vue'
+</script>
 <template>
   <div class="container">
     <div class="title">
@@ -14,11 +17,14 @@
         </div>
       </form>
     </main>
+    <footer>
+      <CreditYear />
+    </footer>
   </div>
 </template>
 <style scoped>
 .container {
-  margin: 7rem auto;
+  margin: 7rem auto 1rem;
   width: 100%;
   max-width: 800px;
 }
@@ -69,5 +75,10 @@
   background-color: white;
   border-color: var(--secondaryColor);
   color: inherit;
+}
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 </style>

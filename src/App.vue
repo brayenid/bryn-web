@@ -3,12 +3,16 @@ import { RouterView } from 'vue-router'
 import NavRouter from './components/NavRouter.vue'
 </script>
 <template>
-  <NavRouter />
-  <RouterView v-slot="{ Component }">
-    <transition name="fade" mode="out-in">
-      <component :is="Component"></component>
-    </transition>
-  </RouterView>
+  <div>
+    <NavRouter />
+    <RouterView v-slot="{ Component, route }">
+      <Transition name="fade" mode="out-in">
+        <div :key="route.name">
+          <component :is="Component"></component>
+        </div>
+      </Transition>
+    </RouterView>
+  </div>
 </template>
 <style scoped>
 .fade-enter-from,
@@ -17,6 +21,6 @@ import NavRouter from './components/NavRouter.vue'
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 </style>

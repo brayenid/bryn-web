@@ -1,5 +1,6 @@
 <script setup>
 import IconDownload from '../components/icons/IconDownload.vue'
+import CreditYear from '../components/CreditYear.vue'
 </script>
 <template>
   <div class="container">
@@ -15,6 +16,9 @@ import IconDownload from '../components/icons/IconDownload.vue'
       <img src="@/assets/bryn.webp" alt="bryn" title="bryn" />
     </div>
   </div>
+  <footer>
+    <CreditYear />
+  </footer>
 </template>
 <style scoped>
 .container {
@@ -68,6 +72,10 @@ import IconDownload from '../components/icons/IconDownload.vue'
 }
 .right img {
   width: max-content;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
 }
 
 @media screen and (min-width: 770px) {
