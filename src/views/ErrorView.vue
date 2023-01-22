@@ -1,13 +1,15 @@
+<script setup>
+import { RouterLink } from 'vue-router'
+</script>
 <template>
   <div class="error">
     <h1>404</h1>
-    <p>Back to <a href="/">Homepage</a></p>
+    <p>Back to <RouterLink to="/">Homepage</RouterLink></p>
   </div>
 </template>
 <style scoped>
 .error {
-  background-color: var(--backgroundColor);
-  color: var(--mainColor);
+  color: var(--secondaryColor);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -18,10 +20,10 @@
 }
 p {
   font-size: 1rem;
-  color: #eee;
+  color: var(--secondaryColor);
 }
 a {
-  color: var(--mainColor);
+  color: var(--secondaryColor);
   text-decoration: underline;
 }
 h1 {
