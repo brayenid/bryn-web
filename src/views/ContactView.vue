@@ -9,9 +9,9 @@ import CreditYear from '../components/CreditYear.vue'
     </div>
     <main>
       <form id="contact" target="_blank" action="https://formsubmit.co/319bddddd3b99cba0d6b68a77af1ed21" method="POST">
-        <input type="text" placeholder="Your Name" name="name" />
-        <input type="email" placeholder="Your Email" name="name" />
-        <textarea name="message" rows="10" placeholder="Your Message ..."></textarea>
+        <input type="text" placeholder="Your Name" name="name" required />
+        <input type="email" placeholder="Your Email" name="name" required />
+        <textarea name="message" rows="10" placeholder="Your Message ..." required></textarea>
         <div class="button">
           <button type="submit">Send!</button>
         </div>

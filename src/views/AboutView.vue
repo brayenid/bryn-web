@@ -45,7 +45,7 @@ import CreditYear from '../components/CreditYear.vue'
   font-weight: 500;
 }
 .left p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.8rem;
   margin: 2rem 0;

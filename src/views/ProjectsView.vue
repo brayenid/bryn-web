@@ -85,20 +85,22 @@ main {
 .project .detail h2 {
   margin: 1rem 0;
   font-weight: 600;
+  font-size: 1.2rem;
 }
 .project .detail p {
   font-weight: 300;
   margin-bottom: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
 }
 .stacksContainer {
   margin-bottom: 1rem;
 }
-.stack {
+.project .detail .stack {
   margin: 0.5rem;
   font-weight: 300;
   display: inline;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 footer {
   text-align: center;
