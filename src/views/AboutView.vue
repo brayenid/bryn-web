@@ -31,7 +31,7 @@ import CreditYear from '../components/CreditYear.vue'
   justify-content: space-between;
   gap: 2rem;
   flex-direction: column;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 .left {
   width: 100%;
