@@ -1,17 +1,19 @@
 @import './base.css';
 :root {
-  --mainColor: #fff;
+  --mainColor: #aaa;
   --secondaryColor: #222;
+  --textColor: #555;
+  --textDeeperColor: #333;
 }
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #111;
+  background-color: var(--secondaryColor);
 }
 body {
-  background-color: #fff;
+  background-color: var(--mainColor);
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   padding: 0 1.5rem;
@@ -26,5 +28,5 @@ a {
 }
 input:focus,
 textarea:focus {
-  outline: 1px solid var(--secondaryColor);
+  outline: none;
 }

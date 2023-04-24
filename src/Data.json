@@ -1,9 +1,17 @@
 {
   "projects": [
     {
+      "id": "8",
+      "name": "Forum API",
+      "desc": "This project was built using HapiJS, Postgre, and JWTAuth strategy. I implemented the Clean Architecture architectural pattern. This project is my final project of the \"Becoming a Back-End Developer Expert\" course at Dicoding Indonesia.",
+      "image": "/projects/forumapi.webp",
+      "stack": ["HapiJS", "PostgreSQL", "Back-End"],
+      "url": "https://github.com/brayenid/forum-api-dicoding"
+    },
+    {
       "id": "7",
       "name": "Websdeck",
-      "desc": "This project was built using Vue JS. Websdeck is a CSS-JS Playground that inspired by CSSDeck.",
+      "desc": "This project was built using Vue JS. Websdeck is a CSS-JS Playground that was inspired by CSSDeck.",
       "image": "/projects/websdeck.webp",
       "stack": ["VueJs", "Firebase", "Front-End"],
       "url": "https://websdeck.netlify.app/"

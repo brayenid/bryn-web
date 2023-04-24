@@ -60,7 +60,7 @@ const { projects } = datas
 main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .project {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

@@ -10,7 +10,11 @@ import CreditYear from '../components/CreditYear.vue'
         My name is Brayen Luhat, You can call me Brayen. I live in a small district in East Kalimantan (Borneo), West Kutai, Indonesia. I'm an independent Web Developer learner and will always be. My main programming language is Javascript
         (JS). I usually work with Javascript and some cool technologies like Vue JS, Tailwind CSS, ExpressJS, MongoDB, and curently learning Hapi JS and PostgreSQL.
       </p>
-      <a href="/resume.pdf" target="_blank" aria-label="Download Resume"><IconDownload /> Resume </a>
+      <ul>
+        <li>
+          <a href="/resume_indonesia.pdf" target="_blank" aria-label="Download Resume"><IconDownload /> Resume </a>
+        </li>
+      </ul>
     </div>
     <div class="right">
       <div class="imgContainer">
@@ -64,7 +68,7 @@ import CreditYear from '../components/CreditYear.vue'
   transition: 0.2s ease-in-out;
 }
 .left a:hover {
-  background-color: white;
+  background-color: var(--mainColor);
   border-color: var(--secondaryColor);
   color: inherit;
 }

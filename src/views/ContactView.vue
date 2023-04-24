@@ -59,6 +59,18 @@ import CreditYear from '../components/CreditYear.vue'
   border: none;
   background-color: rgba(0, 0, 0, 0.03);
   resize: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  color: var(--textDeeperColor);
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: var(--textColor);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 .button {
   text-align: right;
@@ -67,12 +79,12 @@ import CreditYear from '../components/CreditYear.vue'
   padding: 0.8rem 1.5rem;
   background-color: var(--secondaryColor);
   color: white;
-  border: 1px solid;
+  border: 1px solid var(--secondaryColor);
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 #contact button:hover {
-  background-color: white;
+  background-color: var(--mainColor);
   border-color: var(--secondaryColor);
   color: inherit;
 }

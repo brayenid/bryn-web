@@ -54,7 +54,7 @@ nav ul {
   top: 0;
   position: fixed;
   flex-direction: column;
-  background-color: beige;
+  background-color: rgb(182, 182, 161);
   width: 100%;
   height: 100vh;
   z-index: 10;
