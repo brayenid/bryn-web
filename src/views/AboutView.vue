@@ -12,7 +12,10 @@ import CreditYear from '../components/CreditYear.vue'
       </p>
       <ul>
         <li>
-          <a href="/resume_indonesia.pdf" target="_blank" aria-label="Download Resume"><IconDownload /> Resume </a>
+          <a class="downloadLink" href="/resume.pdf" target="_blank" aria-label="Download Resume"><IconDownload /> Resume </a>
+        </li>
+        <li>
+          <a class="downloadLinkId" href="/resume_indonesia.pdf" target="_blank" aria-label="Download Resume Indonesia">Resume Bahasa Indonesia</a>
         </li>
       </ul>
     </div>
@@ -54,7 +57,7 @@ import CreditYear from '../components/CreditYear.vue'
   line-height: 1.8rem;
   margin: 2rem 0;
 }
-.left a {
+.left .downloadLink {
   background-color: var(--secondaryColor);
   padding: 0.5rem 1rem;
   display: flex;
@@ -67,10 +70,20 @@ import CreditYear from '../components/CreditYear.vue'
   border: 1px solid transparent;
   transition: 0.2s ease-in-out;
 }
-.left a:hover {
+.left .downloadLink:hover {
   background-color: var(--mainColor);
   border-color: var(--secondaryColor);
   color: inherit;
+}
+.downloadLinkId {
+  text-decoration: underline;
+  color: #555;
+}
+.downloadLink:hover {
+  color: #333;
+}
+ul li {
+  padding-bottom: 1rem;
 }
 .right {
   width: 100%;
