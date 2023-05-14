@@ -8,7 +8,8 @@ import CreditYear from '../components/CreditYear.vue'
       <h1>About <span>Me</span></h1>
       <p>
         My name is Brayen Luhat, You can call me Brayen. I live in a small district in East Kalimantan (Borneo), West Kutai, Indonesia. I'm an independent Web Developer learner and will always be. My main programming language is Javascript
-        (JS). I usually work with Javascript and some cool technologies like Vue JS, Tailwind CSS, ExpressJS, MongoDB, and curently learning Hapi JS and PostgreSQL.
+        (JS). I usually work with Javascript and some cool technologies like Vue JS, Tailwind CSS, ExpressJS, MongoDB, and curently learning Hapi JS and PostgreSQL. I work part time as an
+        <a class="dicodingLink" href="https://www.dicoding.com/users/brayenluhat/academies" target="_blank" rel="noopener noreferrer">External Reviewer</a> at Dicoding Indonesia in Back-End and Front-End Web Classes.
       </p>
       <ul>
         <li>
@@ -81,6 +82,22 @@ import CreditYear from '../components/CreditYear.vue'
 }
 .downloadLink:hover {
   color: #333;
+}
+.dicodingLink {
+  position: relative;
+  display: inline;
+}
+.dicodingLink::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(47, 201, 198, 0.439);
+  transition: all ease-in-out 0.1s;
+}
+.dicodingLink:hover::before {
+  height: 10px;
 }
 ul li {
   padding-bottom: 1rem;
