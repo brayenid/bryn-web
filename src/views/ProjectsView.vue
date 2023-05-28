@@ -103,9 +103,9 @@ main {
   margin: 0.2rem;
   font-weight: 300;
   font-size: 0.9rem;
-  background-color: rgb(193, 245, 228);
+  background-color: rgba(175, 243, 220, 0.4);
   display: inline-block;
-  padding: 0.1rem;
+  padding: 0.2rem;
 }
 footer {
   text-align: center;
