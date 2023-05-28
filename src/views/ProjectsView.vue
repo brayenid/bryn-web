@@ -21,9 +21,9 @@ const { projects } = datas
             <h2>{{ data.name }}</h2></a
           >
           <p>{{ data.desc }}</p>
-          <div class="stacksContainer">
-            <p class="stack" v-for="stack in data.stack" :key="stack.id">#{{ stack }}</p>
-          </div>
+          <ul class="stacksContainer">
+            <li class="stack" v-for="stack in data.stack" :key="stack.id">#{{ stack }}</li>
+          </ul>
         </div>
       </div>
     </main>
@@ -64,6 +64,7 @@ main {
 }
 .project {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .imgContainer {
   min-height: 150px;
@@ -95,12 +96,16 @@ main {
 }
 .stacksContainer {
   margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
 }
 .project .detail .stack {
-  margin: 0.5rem;
+  margin: 0.2rem;
   font-weight: 300;
-  display: inline;
   font-size: 0.9rem;
+  background-color: rgb(193, 245, 228);
+  display: inline-block;
+  padding: 0.1rem;
 }
 footer {
   text-align: center;
