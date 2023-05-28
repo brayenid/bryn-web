@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "id": "9",
+      "name": "E-Surat",
+      "desc": "E-Surat is a web-based archive for office letters. This is a full stack project that I built using HapiJS & Postgre (Back-End) and Vue JS & Tailwind (Front-End). The back-end is deployed on GCP.",
+      "image": "/projects/esurat.webp",
+      "stack": ["HapiJS", "PostgreSQL", "VueJs", "Tailwind", "Front-End", "Back-End"],
+      "url": "https://esurat-bryn.netlify.app/"
+    },
+    {
       "id": "8",
       "name": "Forum API",
       "desc": "This project was built using HapiJS, Postgre, and JWTAuth strategy. I implemented the Clean Architecture architectural pattern. This project is my final project of the \"Becoming a Back-End Developer Expert\" course at Dicoding Indonesia.",
