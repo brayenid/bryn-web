@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "id": "10",
+      "name": "Quran Digital",
+      "desc": "Quran Digital is a client request project built with native JS (Including SPA), using the Webpack bundler. Features: surah viewer, verse autoplay audio player, and interpretation.",
+      "image": "/projects/quran.webp",
+      "stack": ["Front-End", "Webpack"],
+      "url": "https://duniaislam.xyz/quran"
+    },
+    {
       "id": "9",
       "name": "E-Surat",
       "desc": "E-Surat is a web-based archive for office letters. This is a full stack project that I built using HapiJS & Postgre (Back-End) and Vue JS & Tailwind (Front-End). The back-end is deployed on GCP.",
