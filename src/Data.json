@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "id": "11",
+      "name": "LPK Kalleria",
+      "desc": "LPK Kalleria is a course institution. I design and develop registration, transaction, attendance, and certification systems. I work with Nuxt JS, Tailwind, Express and Postgre.",
+      "image": "/projects/lpk-kalleria.webp",
+      "stack": ["Fullstack", "Nuxt", "Express", "PostgreSQL"],
+      "url": "https://lpk.kalleriagroup.com"
+    },
+    {
       "id": "10",
       "name": "Quran Digital",
       "desc": "Quran Digital is a client request project built with native JS (Including SPA), using the Webpack bundler. Features: surah viewer, verse autoplay audio player, and interpretation.",
