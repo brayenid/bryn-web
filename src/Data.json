@@ -14,7 +14,7 @@
       "desc": "Quran Digital is a client request project built with native JS (Including SPA), using the Webpack bundler. Features: surah viewer, verse autoplay audio player, and interpretation.",
       "image": "/projects/quran.webp",
       "stack": ["Front-End", "Webpack"],
-      "url": "https://duniaislam.xyz/quran"
+      "url": "https://qurandigital-bryn.netlify.app/"
     },
     {
       "id": "9",
