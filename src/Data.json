@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "id": "12",
+      "name": "Arisan",
+      "desc": "This website helps to randomize names in social gathering activities. Just a light project to learn typescript.",
+      "image": "/projects/arisan.webp",
+      "stack": ["VueJs", "Typescript", "Tailwind"],
+      "url": "https://arisan-bryn.netlify.app/"
+    },
+    {
       "id": "11",
       "name": "LPK Kalleria",
       "desc": "LPK Kalleria is a course institution. I design and develop registration, transaction, attendance, and certification systems. I work with Nuxt JS, Tailwind, Express and Postgre.",
